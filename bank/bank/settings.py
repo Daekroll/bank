@@ -11,7 +11,7 @@ load_dotenv()
 # Quick-start development settings - unsuitable for production
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = getenv('DJANGO_SECRET_KEY')
+SECRET_KEY = getenv('DJANGO_SECRET_KEY', 'asfaekhg8923htgnipnsklfc')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = getenv(
@@ -19,7 +19,7 @@ DEBUG = getenv(
     True
 )
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
